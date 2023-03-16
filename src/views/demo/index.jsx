@@ -33,7 +33,7 @@ const Demo = memo(() => {
                 {
                     names?.map((item,index)=>{
                         return <div key={index} onClick={e=>elClickHandle(index)} className={classNames('item',{active:index===curIndex})}></div>
-                    })
+                    })    
                 }
             </Indictor>
         </div>
