@@ -1,4 +1,4 @@
-import useFix from '@/hooks/useFix'
+import { changeFixAction } from "@/store/features/main";
 import { fetchRoomListAction } from '@/store/features/entire'
 import React, { memo, useEffect } from 'react'
 import { connect, useDispatch } from 'react-redux'
@@ -9,8 +9,10 @@ import {EntireWrapper} from './style'
 
 
 const Entire = memo((props) => {
-    useFix(true)
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    useEffect(() => {
+      dispatch(changeFixAction(true));
+    }, [dispatch]);
     useEffect(()=>{
         dispatch(fetchRoomListAction())
     },[dispatch])
