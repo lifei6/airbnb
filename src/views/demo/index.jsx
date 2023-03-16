@@ -5,7 +5,7 @@ import { DemoWrapper } from './style'
 
 const Demo = memo(() => {
     const [curIndex,setCurIndex] = useState(0)
-    const names = ['圆点1','圆点2','圆点3','圆点4','圆点5','圆点2','圆点3','圆点4','圆点5']
+    const names = ['圆点1','圆点2','圆点3','圆点4','圆点5','圆点2','圆点3','圆点4','圆点5','test']
     // 1.上下按钮点击事件处理
     function btnClickHandle(isNext){
         let newIndex = curIndex
