@@ -31,10 +31,6 @@ const routes = [
         path:'*',
         element:<NotFound/>
     },
-    {
-        path:'/demo',
-        element:<Demo/>
-    },
 ]
 
 export default routes
