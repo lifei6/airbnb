@@ -26,7 +26,7 @@ export const RoomWrapper = styled.div`
 
    .control {
     position:absolute;
-    z-index: 1;
+    z-index: 99;
     top:0;
     left:0;
     right:0;

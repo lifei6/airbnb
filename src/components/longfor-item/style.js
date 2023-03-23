@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const LongforItemWapper = styled.div`
-    flex-shrink: 0;
+  flex-shrink: 0;
   width: 20%;
   
   .inner {
